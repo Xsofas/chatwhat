@@ -1,0 +1,47 @@
+{
+    "name": "@builderbot/database-json",
+    "version": "1.1.4-alpha.7",
+    "description": "Esto es el conector a json",
+    "keywords": [],
+    "author": "Leifer Mendez <leifer33@gmail.com>",
+    "license": "ISC",
+    "main": "dist/index.cjs",
+    "types": "dist/index.d.ts",
+    "type": "module",
+    "directories": {
+        "src": "src",
+        "test": "__tests__"
+    },
+    "files": [
+        "./dist/"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/codigoencasa/bot-whatsapp.git"
+    },
+    "scripts": {
+        "build": "rimraf dist && rollup --config",
+        "test": " npx uvu -r tsm ./__tests__ .test.ts",
+        "test:debug": " npx tsm --inspect-brk ../../node_modules/uvu/bin.js ./__tests__ .test.ts",
+        "test:coverage": "npx c8  npm run test"
+    },
+    "bugs": {
+        "url": "https://github.com/codigoencasa/bot-whatsapp/issues"
+    },
+    "dependencies": {
+        "@builderbot/bot": "workspace:^"
+    },
+    "homepage": "https://github.com/codigoencasa/bot-whatsapp#readme",
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^25.0.7",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-terser": "^0.4.4",
+        "@types/node": "^20.12.3",
+        "kleur": "^4.1.5",
+        "rimraf": "^3.0.2",
+        "rollup-plugin-typescript2": "^0.36.0",
+        "tslib": "^2.6.2",
+        "tsm": "^2.3.0"
+    },
+    "gitHead": "f21e49621dffad2a1226aecea535668016f07b14"
+}
